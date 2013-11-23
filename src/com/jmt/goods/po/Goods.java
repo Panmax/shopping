@@ -12,9 +12,9 @@ public class Goods implements Serializable {
 	   private Integer   goodsID  ;       
 	   private String    goodsName;                    
 	   private String    goodsIntroduce  ;            
-	   private Integer   goodsNormalPrice  ;         
-	   private Integer   goodsMemberPrice   ;         
-	   private Integer   goodsRebate  ;         
+	   private Double   goodsNormalPrice  ;
+	   private Double   goodsMemberPrice   ;
+	   private Double   goodsRebate  ;
 	   private String    typeCode ;  
 	   private Integer   goodsNumber ;          
 	   private Integer   goodsGrade   ;         
@@ -44,22 +44,22 @@ public class Goods implements Serializable {
 	public void setGoodsIntroduce(String goodsIntroduce) {
 		this.goodsIntroduce = goodsIntroduce;
 	}
-	public Integer getGoodsNormalPrice() {
+	public Double getGoodsNormalPrice() {
 		return goodsNormalPrice;
 	}
-	public void setGoodsNormalPrice(Integer goodsNormalPrice) {
+	public void setGoodsNormalPrice(Double goodsNormalPrice) {
 		this.goodsNormalPrice = goodsNormalPrice;
 	}
-	public Integer getGoodsMemberPrice() {
+	public Double getGoodsMemberPrice() {
 		return goodsMemberPrice;
 	}
-	public void setGoodsMemberPrice(Integer goodsMemberPrice) {
+	public void setGoodsMemberPrice(Double goodsMemberPrice) {
 		this.goodsMemberPrice = goodsMemberPrice;
 	}
-	public Integer getGoodsRebate() {
+	public Double getGoodsRebate() {
 		return goodsRebate;
 	}
-	public void setGoodsRebate(Integer goodsRebate) {
+	public void setGoodsRebate(Double goodsRebate) {
 		this.goodsRebate = goodsRebate;
 	}
 	public String getTypeCode() {

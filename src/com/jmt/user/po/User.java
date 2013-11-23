@@ -14,9 +14,9 @@ public class User implements Serializable {
 	                private  String   userTrueName ;      //   真实姓名
 	                private  String   userPassword ;       //密码
 	                private  String   isValid ;           // 是否有效  --0表示无效  --1表示有效
-	                private  String   userlevel ;         //  用户级别  --0表示普通用户（） 1表示管理员
+	                private  String   userlevel ;         //  用户级别  --0表示普通用户 --1表示管理员
 	                private  Date     createDate ;        //创建时间
-	                private  Date    updateDate   ;       // 修改时间
+	                private  Date     updateDate   ;       // 修改时间
 					public Integer getUserID() {
 						return userID;
 					}

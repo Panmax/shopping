@@ -10,4 +10,5 @@ public interface PlacardDao {
 	public Placard getPlacard(int id);
 	public boolean deletePlacard(int id);
 	public List<Placard> getAllPlacard();
+    public boolean isExsit(String placardTitle);
 }

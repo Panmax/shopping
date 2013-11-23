@@ -14,7 +14,7 @@ public class Member implements Serializable {
              private  String   memberPassword;     //会员密码
              private  String   memberEmail ;    //Email
              private  Integer  memberGrade;      // 会员等级
-             private  Integer  memberAmount;     //消费额
+             private  Double  memberAmount;     //消费额
              private  String   memberStatus ;    //会员状态 0表示冻结，1表示解冻
              private  Date     createDate  ;      //创建时间
              private   Date    updateDate  ;        //修改时间
@@ -48,10 +48,10 @@ public class Member implements Serializable {
 			public void setMemberGrade(Integer memberGrade) {
 				this.memberGrade = memberGrade;
 			}
-			public Integer getMemberAmount() {
+			public Double getMemberAmount() {
 				return memberAmount;
 			}
-			public void setMemberAmount(Integer memberAmount) {
+			public void setMemberAmount(Double memberAmount) {
 				this.memberAmount = memberAmount;
 			}
 			public String getMemberStatus() {

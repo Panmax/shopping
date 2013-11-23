@@ -9,7 +9,7 @@ public interface GoodsDao {
 	public boolean updateGoods(Goods goods);
 	public Goods getGoods(int id);
 	public boolean deleteGoods(int id);
-	public boolean goodsName(String goodsName);
+	public boolean isExsit(String goodsName);
 	public List<Goods> getSalesGoods();
 	public List<Goods> getValidGoods();
 	public List<Goods> getNewGoods();
