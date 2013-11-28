@@ -12,7 +12,7 @@ public class OrderDetail implements Serializable {
 	private String orderID; // 订单ID
 	private Integer goodsID; // 商品ID
 	private String goodsName; // 商品名称
-	private Integer goodsPrice; // 商品单价
+	private Double goodsPrice; // 商品单价
 	private Integer goodsCount; // 商品数量
 
 	public Integer getId() {
@@ -47,11 +47,11 @@ public class OrderDetail implements Serializable {
 		this.goodsName = goodsName;
 	}
 
-	public Integer getGoodsPrice() {
+	public Double getGoodsPrice() {
 		return goodsPrice;
 	}
 
-	public void setGoodsPrice(Integer goodsPrice) {
+	public void setGoodsPrice(Double goodsPrice) {
 		this.goodsPrice = goodsPrice;
 	}
 

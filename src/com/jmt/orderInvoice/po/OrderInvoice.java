@@ -11,7 +11,7 @@ public class OrderInvoice implements Serializable {
 	private Integer invoiceID; // 发票ID
 	private String invoiceTitle; // 发票抬头
 	private String invoiceContent; // 发票内容
-	private Integer invoiceAmount; // 发票金额 --是购买的商品金额还是发票那张纸的价钱
+	private Double invoiceAmount; // 发票金额 --是购买的商品金额还是发票那张纸的价钱
 	private String orderID; // 订单ID
 
 	public Integer getInvoiceID() {
@@ -38,11 +38,11 @@ public class OrderInvoice implements Serializable {
 		this.invoiceContent = invoiceContent;
 	}
 
-	public Integer getInvoiceAmount() {
+	public Double getInvoiceAmount() {
 		return invoiceAmount;
 	}
 
-	public void setInvoiceAmount(Integer invoiceAmount) {
+	public void setInvoiceAmount(Double invoiceAmount) {
 		this.invoiceAmount = invoiceAmount;
 	}
 

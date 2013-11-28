@@ -19,7 +19,7 @@ public class Goods implements Serializable {
 	   private Integer   goodsNumber ;          
 	   private Integer   goodsGrade   ;         
 	   private Integer   isSale  ;       
-	   private Integer   isValid  ;   
+	   private Integer   isValid  ;   // 有效1 无效0
 	   private String    goodsPicture  ;         
 	   private Integer   buycount  ;
 	   private String    creater  ;     

@@ -14,4 +14,6 @@ public interface GoodsDao {
 	public List<Goods> getValidGoods();
 	public List<Goods> getNewGoods();
 	public List<Goods> getAllGoods();
+    public boolean addGoodsCount(int goodsID,int count);
+    public boolean setGoodsValid(int goodsID);
 }

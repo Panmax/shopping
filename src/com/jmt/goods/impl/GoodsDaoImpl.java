@@ -279,4 +279,56 @@ public class GoodsDaoImpl implements GoodsDao {
             return null;
         }
     }
+
+    @Override
+    public boolean addGoodsCount(int goodsID, int count) {
+        conn = DB.getConn();
+        try {
+            pstmt = conn.prepareStatement("update T_Goods set GoodsNumber=? where GoodsID=?");
+            int oldcount = getGoods(goodsID).getGoodsNumber();
+            int newcount = oldcount+count;
+            pstmt.setInt(1, newcount);
+            pstmt.setInt(2, goodsID);
+
+            int result = pstmt.executeUpdate();
+            if (result>0) {
+                return true;
+            }
+            else {
+                return false;
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();  //To change body of catch statement use File | Settings | File Templates.
+            return false;
+        }
+    }
+
+    @Override
+    public boolean setGoodsValid(int goodsID) {
+        conn = DB.getConn();
+        try {
+            pstmt = conn.prepareStatement("update T_Goods set isValid=? where GoodsID=?");
+            int valid = getGoods(goodsID).getIsValid();
+            if (valid==1) {
+                pstmt.setInt(1,0);
+            }
+            else if (valid==0) {
+                pstmt.setInt(1,1);
+            }
+            pstmt.setInt(2, goodsID);
+
+            int count = pstmt.executeUpdate();
+            if (count>0) {
+                return true;
+            }
+            else {
+                return false;
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();  //To change body of catch statement use File | Settings | File Templates.
+            return false;
+        }
+    }
+
+
 }

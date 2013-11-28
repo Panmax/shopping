@@ -12,11 +12,18 @@ public class Placard implements Serializable {
 	      private Integer placardID   ;          //公告ID              
 	      private String  placardTitle ;         //公告主题
 	      private String  placardContent ;       //公告内容
-	      private Date    issueDate  ;           //发布时间       
+	      private Date    issueDate  ;           //发布时间      
 	      private String  creater ;              //创建人
 	      private Date    createDate ;             //创建时间
 	      private String  updater ;             //修改人
 	      private Date  updateDate;                             //修改时间
+	      private Date expireDate;
+		public Date getExpireDate() {
+			return expireDate;
+		}
+		public void setExpireDate(Date expireDate) {
+			this.expireDate = expireDate;
+		}
 		public Integer getPlacardID() {
 			return placardID;
 		}
